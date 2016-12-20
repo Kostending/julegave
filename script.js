@@ -24,10 +24,10 @@ $(function () {
 
         var message =
 
-        message = days + 'days ';
-        message += hours + 'hrs ';
-        message += minutes + 'mins ';
-        message += seconds + 'secs';
+        message = days + ' dage ';
+        message += hours + ' timer ';
+        message += minutes + ' minuter ';
+        message += seconds + ' sekunder';
 
         // not assigning
         $('#days').html(message);

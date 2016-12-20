@@ -1,0 +1,9 @@
+body {
+	background-image: url("vargas.jpg");
+	background-size: 100%;
+	color: white;
+}
+
+body h1 {
+	font-size: 60px; 
+}
