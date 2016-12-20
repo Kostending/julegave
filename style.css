@@ -7,3 +7,12 @@ body {
 body h1 {
 	font-size: 60px; 
 }
+
+.warm-up {
+	margin-top: 80px; 
+	/*border-top: 4px dashed white;*/
+}
+
+.seccond {
+	margin-top: 10px
+}
