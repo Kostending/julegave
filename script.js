@@ -31,7 +31,6 @@ $(function () {
 
         // not assigning
         $('#days').html(message);
-        console.log(message);
     }
 
     timer = setInterval(showRemaining, 1000);
