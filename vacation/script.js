@@ -12,7 +12,18 @@ $(function() {
   		var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   		var seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  		$('#counter').html(days + " dage " + hours + " timer " + minutes + " minutter " + seconds + " sekunder");
+  		$('#counter').html(days + " Dage " + hours + " Timer " + minutes + " Minutter " + seconds + " Sekunder");
 
 	}, 1000);
+
+	function anim(plane, speed) {
+    	plane.animate({
+        	"left": "40%"
+    	}, speed)
+    	.animate({
+    		"left": "85%"
+    	}, speed);
+	};
+
+	anim($('#plane'), 5000);
 });

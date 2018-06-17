@@ -14,3 +14,25 @@ body #counter {
 	text-align: center;
 	font-size: 1.8em;
 }
+
+
+body #locOne {
+	position: fixed;
+	margin-top: 10vh;
+	margin-left: 45vw;
+	font-weight: bold;
+}
+
+body #locTwo {
+	position: fixed;
+	margin-left: 90vw;
+	margin-top: 10vh; 
+	font-weight: bold;
+}
+
+body #plane {
+	position: fixed;
+	margin-left: 5vw;
+	margin-top: 10vh;
+	transform: rotate(-45deg);
+}
