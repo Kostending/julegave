@@ -15,6 +15,12 @@ body #counter {
 	font-size: 1.8em;
 }
 
+body #locZero {
+	position: fixed;
+	margin-top: 10vh;
+	margin-left: 30vw;
+	font-weight: bold;
+}
 
 body #locOne {
 	position: fixed;
@@ -32,7 +38,14 @@ body #locTwo {
 
 body #plane {
 	position: fixed;
-	margin-left: 5vw;
+	margin-left: 30vw;
 	margin-top: 10vh;
 	transform: rotate(-45deg);
+}
+
+
+body #car {
+	position: fixed;
+	margin-left: 5vw;
+	margin-top: 10vh;
 }

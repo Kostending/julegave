@@ -1,6 +1,6 @@
 $(function() {
 	// Flight time 20. aug kl. 14:55
-	const flightTime = new Date('Aug 20, 2018 14:55:00').getTime();
+	const flightTime = new Date('Aug 18, 2018 08:00:00').getTime();
 
 	let loop = setInterval(function() {
 		const now = new Date().getTime();
@@ -16,14 +16,38 @@ $(function() {
 
 	}, 1000);
 
-	function anim(plane, speed) {
-    	plane.animate({
-        	"left": "40%"
-    	}, speed)
-    	.animate({
-    		"left": "85%"
-    	}, speed);
-	};
 
-	anim($('#plane'), 5000);
+	// function anim(car, speed) {
+ //    	car.animate({
+ //        	"left": "40%"
+ //    	}, speed)
+ //    	.animate({
+ //    		"left": "85%"
+ //    	}, speed, function() {
+ //    		console.log('done');
+ //    	});
+	// };
+
+	// function anim(plane, speed) {
+ //    	plane.animate({
+ //        	"left": "40%"
+ //    	}, speed)
+ //    	.animate({
+ //    		"left": "85%"
+ //    	}, speed);
+	// };
+
+	// anim($('#car'), 5000);
+	// anim($('#plane'), 5000);
+
+	$('#car').animate({
+		"left": "25%"
+	}, 5000, function() {
+		$('#plane').animate(
+			{"left": "15%"},
+			3000).
+		animate(
+			{"left": "60%"},
+			5000);
+	});
 });
