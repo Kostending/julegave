@@ -1,6 +1,21 @@
 $(function() {
 	// Flight time 20. aug kl. 14:55
 	var flightTime = new Date('Aug 18, 2018 08:00:00').getTime();
+	var instanbul  = new Date('Aug 20, 2018 14:55:00').getTime();
+	var kreta = new Date('Aug 25, 2018 10:35:00').getTime();
+	var home = new Date('Aug 31, 2018 19:00:00').getTime();
+
+	var now = new Date().getTime();
+
+	if (0 > flightTime - now) {
+		flightTime = instanbul;
+	}
+	if (0 > flightTime - now) {
+		flightTime = kreta;
+	}
+	if (0 > flightTime - now) {
+		flightTime = home;
+	}
 
 	var loop = setInterval(function() {
 		var now = new Date().getTime();
