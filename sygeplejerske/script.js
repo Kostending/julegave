@@ -1,11 +1,10 @@
 $(function() {
-	var sexTime = new Date('Nov 18, 2018 20:00:00').getTime();
-	console.log(sexTime);
+	var doneTime = new Date('Jan 15, 2019 10:50:00').getTime();
 
 	var loop = setInterval(function() {
 		var now = new Date().getTime();
 
-		var diff = sexTime - now;
+		var diff = doneTime - now;
 
 		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
  		var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
